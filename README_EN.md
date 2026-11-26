@@ -77,6 +77,12 @@ Exchange data is cached as JSON strings. When Redis is unreachable the cache lay
 - Splitter parameters are hard-coded.
 - The exchange module has endpoints but no page.
 
+## Support
+
+If this project saves you some time, a star is enough.
+
+For custom work, integrations with an existing system, or a similar back office, write to <284579804@qq.com> with the scenario and roughly what you need.
+
 ## License
 
 MIT
