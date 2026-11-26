@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1120"/><stop offset="1" stop-color="#111C33"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B2740" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="340" fill="url(#bg)"/>
+<rect width="1200" height="340" fill="url(#grid)" opacity="0.55"/>
+
+<!-- 右侧：K 线区 -->
+<rect x="800" y="52" width="344" height="240" rx="10" fill="#0E1727" stroke="#1E2C44" stroke-width="1"/>
+<path d="M816 84H1128M816 132H1128M816 180H1128M816 228H1128" stroke="#1A2740" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="816" y="72" font-size="10" fill="#5F7399" letter-spacing="2">CONTRACT PRICE</text>
+
+<g stroke-width="1.5">
+<path d="M834 108V196" stroke="#F87171"/><rect x="827" y="126" width="14" height="52" rx="2" fill="#F87171" opacity="0.9"/>
+<path d="M866 96V166" stroke="#4ADE80"/><rect x="859" y="112" width="14" height="38" rx="2" fill="#4ADE80" opacity="0.9"/>
+<path d="M898 84V158" stroke="#F87171"/><rect x="891" y="98" width="14" height="42" rx="2" fill="#F87171" opacity="0.9"/>
+<path d="M930 118V188" stroke="#4ADE80"/><rect x="923" y="134" width="14" height="36" rx="2" fill="#4ADE80" opacity="0.9"/>
+<path d="M962 100V170" stroke="#F87171"/><rect x="955" y="112" width="14" height="44" rx="2" fill="#F87171" opacity="0.9"/>
+<path d="M994 88V152" stroke="#F87171"/><rect x="987" y="100" width="14" height="38" rx="2" fill="#F87171" opacity="0.9"/>
+<path d="M1026 128V206" stroke="#4ADE80"/><rect x="1019" y="144" width="14" height="44" rx="2" fill="#4ADE80" opacity="0.9"/>
+<path d="M1058 74V146" stroke="#F87171"/><rect x="1051" y="88" width="14" height="46" rx="2" fill="#F87171" opacity="0.9"/>
+<path d="M1090 62V132" stroke="#F87171"/><rect x="1083" y="76" width="14" height="40" rx="2" fill="#F87171" opacity="0.9"/>
+</g>
+<path d="M827 168L859 152L891 126L923 160L955 138L987 124L1019 170L1051 118L1083 104" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.55" stroke-linejoin="round"/>
+
+<!-- 风险刻度 -->
+<rect x="816" y="252" width="312" height="8" rx="4" fill="#16233A"/>
+<rect x="816" y="252" width="186" height="8" rx="4" fill="#FBBF24" opacity="0.75"/>
+<circle cx="1002" cy="256" r="5" fill="#0E1727" stroke="#FBBF24" stroke-width="2"/>
+<text x="816" y="278" font-size="10" fill="#5F7399">LOW</text>
+<text x="1058" y="278" font-size="10" fill="#5F7399">HIGH RISK</text>
+
+<!-- 左侧文案 -->
+<circle cx="70" cy="88" r="3" fill="#38BDF8"/>
+<text x="82" y="92" font-size="12" fill="#38BDF8" font-weight="600" letter-spacing="3">COMMODITY RISK PLATFORM</text>
+<text x="64" y="154" font-size="40" fill="#E6EDF7" font-weight="600" letter-spacing="-1">大宗商品交易与风险管理后台</text>
+<text x="64" y="196" font-size="16" fill="#8FA3BF" font-weight="400">品种与合约档案统一维护，配一套跑在本机的 PDF 知识库问答</text>
+
+<rect x="64" y="226" width="127.0" height="30" rx="15" fill="#101A2C" stroke="#38BDF866" stroke-width="1"/>
+<text x="127.5" y="246" font-size="12" fill="#38BDF8" font-weight="500" text-anchor="middle">Spring Boot 3.4</text>
+<rect x="203.0" y="226" width="82.0" height="30" rx="15" fill="#101A2C" stroke="#4ADE8066" stroke-width="1"/>
+<text x="244" y="246" font-size="12" fill="#4ADE80" font-weight="500" text-anchor="middle">JDK 17</text>
+<rect x="297.0" y="226" width="83.0" height="30" rx="15" fill="#101A2C" stroke="#FBBF2466" stroke-width="1"/>
+<text x="338.5" y="246" font-size="12" fill="#FBBF24" font-weight="500" text-anchor="middle">Vue 3</text>
+<rect x="392.0" y="226" width="96.0" height="30" rx="15" fill="#101A2C" stroke="#FB718566" stroke-width="1"/>
+<text x="440" y="246" font-size="12" fill="#FB7185" font-weight="500" text-anchor="middle">MySQL 8</text>
+<rect x="500.0" y="226" width="86.0" height="30" rx="15" fill="#101A2C" stroke="#A78BFA66" stroke-width="1"/>
+<text x="543" y="246" font-size="12" fill="#A78BFA" font-weight="500" text-anchor="middle">Ollama</text>
+<text x="64" y="296" font-size="12" fill="#5F7399" font-weight="400">Spring AI · MyBatis-Plus · Redis 降级缓存 · SSE 流式输出</text>
+</svg>

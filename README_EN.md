@@ -1,4 +1,21 @@
-# 🛢️ SmartHedge Risk Hub
+<div align="center">
+  <img src="images/banner.svg" alt="Commodity trading and risk management back office" width="100%"/>
+</div>
+
+<p align="center">
+  <a href="README.md">中文</a> · <b>English</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.4.3-6DB33F?style=flat-square" alt="Spring Boot"/>
+  <img src="https://img.shields.io/badge/JDK-17%2B-437291?style=flat-square" alt="JDK"/>
+  <img src="https://img.shields.io/badge/Vue-3-42B883?style=flat-square" alt="Vue 3"/>
+  <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/Spring%20AI-Ollama-A78BFA?style=flat-square" alt="Spring AI"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license"/>
+</p>
+
+<h1 align="center">🛢️ SmartHedge Risk Hub</h1>
 
 A commodity trading and risk management back office. Spring Boot 3 + MyBatis-Plus on the server, a Vue 3 single-page app under `static/` on the client (no build step, runtime files loaded from `vendor/`), plus a PDF knowledge base Q&A module backed by a local Ollama instance.
 
@@ -77,12 +94,37 @@ Exchange data is cached as JSON strings. When Redis is unreachable the cache lay
 - Splitter parameters are hard-coded.
 - The exchange module has endpoints but no page.
 
-## Support
+## Feedback
 
-If this project saves you some time, a star is enough.
+- Bugs and suggestions: open an [issue](../../issues)
+- Implementation details or custom work: **QQ 250264668**
+- If the project helps, a star is the best support
 
-For custom work, integrations with an existing system, or a similar back office, write to <284579804@qq.com> with the scenario and roughly what you need.
+## 💗 Support
+
+No ads, no paywall, MIT all the way. If this saved you from wiring a back office from scratch,
+you can buy me a coffee. **Entirely optional, nothing changes if you don't.**
+
+<table align="center">
+  <tr>
+    <td align="center" width="240"><img src="images/alipay-qr.jpg" width="200" alt="Alipay QR"><br><b>Alipay</b></td>
+    <td align="center" width="240"><img src="images/wechat-qr.png" width="200" alt="WeChat QR"><br><b>WeChat</b></td>
+  </tr>
+</table>
+
+## 🛠️ Custom development
+
+If you want this in your own setting:
+
+- Retarget the reference data modules to another industry, with dictionaries, fields and approval flows matching your tables
+- Integrate with an existing ERP, trading or risk system
+- Swap the knowledge base for internal policies or compliance documents and run it fully offline
+- Anything else you have in mind
+
+**Contact: QQ `250264668`** (mention what you need, e.g. "custom back office").
+
+> Custom work is paid and quoted per scope. The open source version stays exactly as it is.
 
 ## License
 
-MIT
+[MIT](LICENSE)

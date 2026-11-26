@@ -1,4 +1,21 @@
-# 🛢️ SmartHedge Risk Hub
+<div align="center">
+  <img src="images/banner.svg" alt="大宗商品交易与风险管理后台" width="100%"/>
+</div>
+
+<p align="center">
+  <b>中文</b> · <a href="README_EN.md">English</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.4.3-6DB33F?style=flat-square" alt="Spring Boot"/>
+  <img src="https://img.shields.io/badge/JDK-17%2B-437291?style=flat-square" alt="JDK"/>
+  <img src="https://img.shields.io/badge/Vue-3-42B883?style=flat-square" alt="Vue 3"/>
+  <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/Spring%20AI-Ollama-A78BFA?style=flat-square" alt="Spring AI"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license"/>
+</p>
+
+<h1 align="center">🛢️ SmartHedge Risk Hub</h1>
 
 大宗商品交易与风险管理后台。后端 Spring Boot 3 + MyBatis-Plus，前端是放在 `static/` 下的 Vue 3 单页应用（不打包，运行时从 `assets/vendor` 直接加载 Vue 与 Element Plus），另外带一个基于本地 Ollama 的 PDF 知识库问答模块。
 
@@ -210,12 +227,38 @@ docs/            功能、接口、数据表对照
 7. **知识库切片参数写死。** `TokenTextSplitter(450, 120, 5, 2000, true)`，换文档类型可能要调，现在没有做成配置项。
 8. **交易所模块只有接口。** 前端没做页面，只能直接调接口验证。
 
-## 赞赏
+## 交流与反馈
 
-如果这个项目对你有帮助，点个 Star 就够了。
+- 发现问题或有改进建议，欢迎直接开 [Issue](../../issues)
+- 想聊实现细节，或者定制类似的系统，可以加 **QQ：250264668**
+- 如果这个项目对你有帮助，点个 Star 就是最好的支持
 
-需要改功能、接学校或公司的现有系统，可以邮件联系：<284579804@qq.com>，说明场景和大致需求。
+## 💗 赞赏
 
-## License
+这个项目没有广告、没有付费墙，代码全部开源。如果它帮你省下了搭后台骨架的时间，
+可以请我喝杯咖啡。**完全随意，不请也照样拿去用，MIT 许可一个条件不少。**
 
-MIT
+<table align="center">
+  <tr>
+    <td align="center" width="240"><img src="images/alipay-qr.jpg" width="200" alt="支付宝收款码"><br><b>支付宝</b></td>
+    <td align="center" width="240"><img src="images/wechat-qr.png" width="200" alt="微信收款码"><br><b>微信</b></td>
+  </tr>
+</table>
+
+## 🛠️ 定制开发
+
+想在自己的场景里用这套东西，可以聊：
+
+- 换成其他行业的主数据后台，字典、字段、审批流按你们的业务表调整
+- 接入公司现有的 ERP、交易或风控系统，把档案数据打通
+- 知识库换成内部制度、合规文档，做私有化部署的问答入口
+- 其他你想到的方向
+
+**联系作者：QQ `250264668`**（加好友请注明来意，比如「定制后台」）。
+
+> 定制是付费服务，具体报价看需求复杂度，聊完再定，不合适不勉强。
+> 开源版不会因此缩水，这个仓库该有的都有。
+
+## 许可
+
+[MIT](LICENSE)
