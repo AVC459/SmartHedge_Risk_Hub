@@ -1,6 +1,6 @@
 # 🛢️ SmartHedge Risk Hub
 
-大宗商品交易与风险管理后台。后端 Spring Boot 3 + MyBatis-Plus，前端是放在 `static/` 下的 Vue 3 单页应用（不走构建，直接用 CDN 版运行时），另外带一个基于本地 Ollama 的 PDF 知识库问答模块。
+大宗商品交易与风险管理后台。后端 Spring Boot 3 + MyBatis-Plus，前端是放在 `static/` 下的 Vue 3 单页应用（不打包，运行时从 `assets/vendor` 直接加载 Vue 与 Element Plus），另外带一个基于本地 Ollama 的 PDF 知识库问答模块。
 
 管理的是平台的主数据：交易品种、交易所、期货合约、现货商品、供货品类、产地、经营者、供应商档案。业务上不做撮合和结算，只负责把这些基础档案维护好，供交易与风控系统引用。
 
