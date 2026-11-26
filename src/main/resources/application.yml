@@ -1,0 +1,51 @@
+server:
+  port: 8086
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
+spring:
+  config:
+    import: classpath:jdbc.properties
+  datasource:
+    url: ${jdbc.url}
+    username: ${jdbc.username}
+    password: ${jdbc.password}
+    driver-class-name: ${jdbc.driver}
+    type: com.alibaba.druid.pool.DruidDataSource
+  # Redis：缓存交易所、交易品种等高频主数据（Redis 未启动时自动回退数据库）
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+      timeout: 300ms
+      connect-timeout: 300ms
+  servlet:
+    multipart:
+      max-file-size: 40MB
+      max-request-size: 60MB
+  # 智能问答子模块：本地 Ollama（需先 ollama pull qwen2.5:7b / bge-m3）
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen2.5:7b
+        options:
+          temperature: 0.3
+      embedding:
+        model: bge-m3
+
+# 知识库相关配置
+smarthedge:
+  ai:
+    knowledge-dir: ./knowledge
+    vector-store-file: ./data/vectorstore.json
+    top-k: 6
+    similarity-threshold: 0.25
+
+logging:
+  level:
+    com.ape.smarthedge_risk_hub: info
+    org.springframework.ai: info

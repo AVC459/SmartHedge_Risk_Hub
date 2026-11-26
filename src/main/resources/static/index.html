@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>SmartHedge · 大宗商品风险管理中枢</title>
+    <link rel="stylesheet" href="assets/vendor/element-plus.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div id="app"></div>
+
+<!-- 运行时依赖：Vue3 + Element Plus + 本地化 -->
+<script src="assets/vendor/vue.global.prod.js"></script>
+<script src="assets/vendor/element-plus.full.min.js"></script>
+<script src="assets/vendor/locale/zh-cn.js"></script>
+
+<!-- 公共层 -->
+<script src="assets/js/api.js"></script>
+<script src="assets/js/ui.js"></script>
+
+<!-- 业务视图 -->
+<script src="assets/js/views/dashboard.js"></script>
+<script src="assets/js/views/variety.js"></script>
+<script src="assets/js/views/category.js"></script>
+<script src="assets/js/views/origin.js"></script>
+<script src="assets/js/views/operator.js"></script>
+<script src="assets/js/views/spot.js"></script>
+<script src="assets/js/views/supplier.js"></script>
+<script src="assets/js/views/futures.js"></script>
+<script src="assets/js/views/aiKnowledge.js"></script>
+
+<!-- 应用入口（菜单 + hash 路由） -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>
